@@ -3,8 +3,8 @@ from django import template
 from django.template.defaulttags import url, URLNode
 from django.template import Node
 
-from treemenus.models import Menu, MenuItem
-from treemenus.config import APP_LABEL
+from ..models import Menu, MenuItem
+from ..config import APP_LABEL
 
 
 register = template.Library()

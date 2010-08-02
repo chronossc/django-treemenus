@@ -10,8 +10,8 @@ from django.utils.encoding import force_unicode
 from django.conf.urls.defaults import patterns
 from django.core.exceptions import PermissionDenied
 
-from treemenus.models import Menu, MenuItem
-from treemenus.utils import get_parent_choices, MenuItemChoiceField, move_item_or_clean_ranks
+from .models import Menu, MenuItem
+from .utils import get_parent_choices, MenuItemChoiceField, move_item_or_clean_ranks
 
 
 

@@ -22,7 +22,7 @@ class MenuItem(models.Model):
         return self.caption
     
     def save(self, force_insert=False, **kwargs):
-        from treemenus.utils import clean_ranks
+        from .utils import clean_ranks
 
         # Calculate level
         old_level = self.level
@@ -63,7 +63,7 @@ class MenuItem(models.Model):
 
     
     def delete(self):
-        from treemenus.utils import clean_ranks
+        from .utils import clean_ranks
         old_parent = self.parent
         super(MenuItem, self).delete()
         if old_parent:
